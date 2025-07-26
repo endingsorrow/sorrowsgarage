@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SorrowsGarage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    header {
+      background-color: rgba(17, 17, 17, 0.8);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+    nav {
+      background: rgba(34, 34, 34, 0.8);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .section-title {
+      font-size: 24px;
+      color: #f00;
+      margin-bottom: 15px;
+      border-bottom: 2px solid red;
+    }
+    .card {
+      background-color: rgba(34, 34, 34, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(17, 17, 17, 0.8);
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+  <header>
+    <div class="logo">S</div>
+    <h1>SorrowsGarage</h1>
+  </header>
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#about">About</a>
+    <a href="#tips">Tips</a>
+    <a href="#tools">Tools</a>
+    <a href="#ask">Ask</a>
+    <a href="#faq">FAQ</a>
+    <a href="#subscribe">Subscribe</a>
+  </nav>
+  <main>
+    <section id="welcome">
+      <div class="section-title">Welcome</div>
+      <p>Welcome to SorrowsGarage! Sharing auto body repair tips, tool reviews, advice, and more.</p>
+    </section>
+    <section id="about">
+      <div class="section-title">About</div>
+      <p>I'm a seasoned auto body tech with 6 years of experience. Here to help you learn paint & body basics, avoid common mistakes, and grow your skills.</p>
+    </section>
+    <section id="tips">
+      <div class="section-title">Auto Body Tips</div>
+      <div class="card">How to Blend Paint Like a Pro</div>
+      <div class="card">Common Body Shop Mistakes to Avoid</div>
+      <div class="card">Beginner’s Guide to Sanding and Prepping Panels</div>
+    </section>
+    <section id="tools">
+      <div class="section-title">Tool Reviews</div>
+      <div class="card">Top 5 Sanding Blocks Under $20</div>
+      <div class="card">What Paint Gun Do I Actually Need?</div>
+    </section>
+    <section id="ask">
+      <div class="section-title">Ask Me Anything</div>
+      <form action="mailto:mrasorrow@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="question" placeholder="Your Question" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="faq">
+      <div class="section-title">Weekly Answers: Common Questions</div>
+      <div class="card"><strong>Q:</strong> What’s the best method to stop rust before painting?<br><strong>A:</strong> Sand to bare metal, use rust converter, epoxy primer.</div>
+      <div class="card"><strong>Q:</strong> Are cheap paint guns worth it?<br><strong>A:</strong> Yes for DIY! Look for good atomization. Avoid ultra-budget no-names.</div>
+      <div class="card"><strong>Q:</strong> How do I pop dents without cracking paint?<br><strong>A:</strong> Use heat (not too much) and a glue puller. Patience is key.</div>
+      <div class="card"><strong>Q:</strong> What grit do I need before primer?<br><strong>A:</strong> 180 grit is ideal. 80 is too coarse unless you're filling.</div>
+      <div class="card"><strong>Q:</strong> Can I spray base and clear with one gun?<br><strong>A:</strong> Yes, clean between coats and watch your tip size.</div>
+    </section>
+    <section id="subscribe">
+      <div class="section-title">Subscribe for Access</div>
+      <p>Subscribe to unlock the FREE in-depth beginner’s guide to paint and body work.</p>
+      <form action="https://ae12cff6.sibforms.com/serve/MUIFALuHFGVXozyGYfCo516F1wKYOZzi0H7jPXcx-qo3J7-94K1vnk4iwN0YZRNwKLEwM0kEMM9A8NSZiLhAT4Vwup7_J8wiOLwm1tClpDpNXeDI-SgU3UAr-n3pRlY8fgJIWyCIxUj7DB3Ctec-zubRzRj9oeUII98z7q3aSTTjfP7rOquVZCEC6O7p5giNe-8WgSUra3KXg_7V" method="POST" target="_blank">
+        <input type="email" name="EMAIL" placeholder="Your Email" required>
+        <input type="hidden" name="locale" value="en">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 SorrowsGarage. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
